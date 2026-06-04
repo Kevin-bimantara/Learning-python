@@ -23,3 +23,18 @@ print("Masih Dipegang?", sedang_ditahan)
 #Kalau sebelumnya Variabel ibarat satu kotak kecil yang hanya bisa diisi satu barang (satu nama, atau satu angka), 
 # maka Struktur Data ibarat sebuah lemari atau rak yang bisa menyimpan banyak barang sekaligus di dalamnya, tapi cukup dipanggil dengan satu nama saja.
 #Di Python, ada 4 jenis "lemari" yang paling sering digunakan, dan masing-masing punya sifat berbeda:
+#List [ ... ] (Rak Fleksibel)
+#Ini adalah lemari yang paling sering dipakai. Sifatnya berurutan dan isinya bisa diubah-ubah (ditambah, dihapus, atau diganti). Ciri khasnya menggunakan kurung siku [].
+#Kapan dipakai: Saat kamu punya banyak data sejenis yang daftarnya bisa bertambah atau berkurang (seperti watchlist aset yang sedang dipantau).
+#contoh
+watchlist_aset = ["Bitcoin", "Ethereum", "Solana"]
+# Kamu bisa menambahkan koin baru ke dalam lemari ini kapan saja
+
+#B. Tuple ( ... ) (Brankas Permanen)
+#ni mirip seperti List, sifatnya berurutan, tapi bedanya isinya dikunci mati (permanen) dan tidak bisa diubah setelah dibuat. 
+# Ciri khasnya menggunakan kurung biasa ().
+# Kapan dipakai: Saat menyimpan data mutlak yang tidak boleh berubah atau tidak sengaja  
+# terhapus oleh program, seperti titik rasio tetap atau koordinat.
+#contoh
+rasio_fibonacci = (0.382, 0.5, 0.618, 0.786)
+# Program akan error kalau kamu mencoba mengubah angka 0.618 di atas
